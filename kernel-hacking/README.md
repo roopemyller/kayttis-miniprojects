@@ -31,9 +31,7 @@ This first project is just a warmup, and thus relatively light on work. The goal
 
 Background
 
-If you haven't watched the
-
-, you might want to read this background section.
+If you haven't watched the https://youtu.be/vR6z2QGcoo8, you might want to read this background section.
 
 More information about xv6, including a very useful book written by the MIT folks who built xv6, is available here. Do note, however, that we use a slightly older version of xv6 (for various pedagogical reasons), and thus the book may not match our code base exactly.
 
@@ -47,9 +45,7 @@ Your system call returns the value of a counter (perhaps called readcount or som
 
 Tips
 
-Watch this
-
--- it contains a detailed walk-through of all the things you need to know to unpack xv6, build it, and modify it to make this project successful.
+Watch this https://youtu.be/vR6z2QGcoo8 -- it contains a detailed walk-through of all the things you need to know to unpack xv6, build it, and modify it to make this project successful.
 
 One good way to start hacking inside a large code base is to find something similar to what you want to do and to carefully copy/modify that. Here, you should find some other system call, like getpid() (or any other simple call). Copy it in all the ways you think are needed, and then modify it to do what you need.
 
