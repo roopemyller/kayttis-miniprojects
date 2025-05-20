@@ -55,10 +55,10 @@ int main(int argc, char *argv[]) {
     }
     int syscall_count = getreadcount(syscall_number, reset);
     if (reset) {
-        printf("Resetting count for syscall %d\n", syscall_number);
+        printf("Resetting count for syscall %d: %s\n", syscall_number, syscall_name);
         printf("Count before reset: %d\n", syscall_count);
     } else {
-        printf("Count for syscall %d: %d\n", syscall_number, syscall_count);
+        printf("Count for syscall %d, %s: %d\n", syscall_number, syscall_name, syscall_count);
     }
     exit(0);
 }
