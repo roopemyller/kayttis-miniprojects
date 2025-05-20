@@ -91,17 +91,3 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
-
-// return the number of read calls made by the process
-
-extern uint64 user_readcount;
-
-uint64 sys_getreadcount(void){
-  int reset;
-  argint(0, &reset); // 0: get read count, 1: reset read count
-  if (reset){
-    user_readcount = 0;
-  }
-
-  return user_readcount;
-}

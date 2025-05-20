@@ -131,6 +131,9 @@ static uint64 (*syscalls[])(void) = {
 [SYS_getreadcount] sys_getreadcount, // needed for readcount syscall
 };
 
+extern uint syscall_counts[];
+#define MAX_SYSCALL_NUMBERS 21
+
 void
 syscall(void)
 {
@@ -139,6 +142,12 @@ syscall(void)
 
   num = p->trapframe->a7;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
+
+    // Increment the syscall count for this syscall number
+    if (num < MAX_SYSCALL_NUMBERS) {
+      syscall_counts[num]++;
+    }
+
     // Use num to lookup the system call function for num, call it,
     // and store its return value in p->trapframe->a0
     p->trapframe->a0 = syscalls[num]();

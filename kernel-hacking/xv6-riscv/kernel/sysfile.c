@@ -16,7 +16,10 @@
 #include "file.h"
 #include "fcntl.h"
 
-uint64 user_readcount = 0; // for readcount syscall
+// define the number of system calls in the kernel
+// and the array that will hod the number of times each syscall is called
+#define MAX_SYSCALL_NUMBERS 21
+uint syscall_counts[MAX_SYSCALL_NUMBERS] = {0}; 
 
 // Fetch the nth word-sized system call argument as a file descriptor
 // and return both the descriptor and the corresponding struct file.
@@ -53,6 +56,33 @@ fdalloc(struct file *f)
   return -1;
 }
 
+
+// return the number of read calls made by the process
+
+uint64 sys_getreadcount(void){
+
+  int syscall_number;
+  argint(0, &syscall_number);
+  if(syscall_number < 0){
+    return -1;
+  }
+
+  if(syscall_number < 0 || syscall_number >= MAX_SYSCALL_NUMBERS){
+    return -1;
+  }
+
+  int reset;
+  argint(1, &reset); // 0: get read count, 1: reset read count
+
+  uint64 syscall_count = syscall_counts[syscall_number];
+
+  if (reset){
+    syscall_counts[syscall_number] = 0; // reset the read count
+  }
+
+  return syscall_count;
+}
+
 uint64
 sys_dup(void)
 {
@@ -73,8 +103,6 @@ sys_read(void)
   struct file *f;
   int n;
   uint64 p;
-
-  user_readcount++; // for readcount syscall
 
   argaddr(1, &p);
   argint(2, &n);
