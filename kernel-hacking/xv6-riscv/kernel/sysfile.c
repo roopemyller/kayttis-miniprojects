@@ -18,8 +18,27 @@
 
 // define the number of system calls in the kernel
 // and the array that will hod the number of times each syscall is called
-#define MAX_SYSCALL_NUMBERS 21
-uint syscall_counts[MAX_SYSCALL_NUMBERS] = {0}; 
+#define MAX_SYSCALL_NUMBERS 22
+uint syscall_counts[MAX_SYSCALL_NUMBERS + 1] = {0}; 
+
+// This is the system call that will be used to count the number of times each syscall is called
+uint64 sys_getcount(void){
+  
+  // get the syscall number from the user
+  int syscall_number;
+  argint(0, &syscall_number);
+
+  // Check if user wants to reset the count, 1 for reset, 0 for no reset
+  // also get the number of times the syscall was called, if user requested reset
+  // the count will be reset to 0 and the old count will be returned
+  int reset;
+  argint(1, &reset); 
+  uint syscall_count = syscall_counts[syscall_number];
+  if (reset){
+    syscall_counts[syscall_number] = 0;
+  }
+  return syscall_count;
+}
 
 // Fetch the nth word-sized system call argument as a file descriptor
 // and return both the descriptor and the corresponding struct file.
@@ -56,32 +75,6 @@ fdalloc(struct file *f)
   return -1;
 }
 
-
-// return the number of read calls made by the process
-
-uint64 sys_getreadcount(void){
-
-  int syscall_number;
-  argint(0, &syscall_number);
-  if(syscall_number < 0){
-    return -1;
-  }
-
-  if(syscall_number < 0 || syscall_number >= MAX_SYSCALL_NUMBERS){
-    return -1;
-  }
-
-  int reset;
-  argint(1, &reset); // 0: get read count, 1: reset read count
-
-  uint64 syscall_count = syscall_counts[syscall_number];
-
-  if (reset){
-    syscall_counts[syscall_number] = 0; // reset the read count
-  }
-
-  return syscall_count;
-}
 
 uint64
 sys_dup(void)

@@ -22,7 +22,7 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
-int getreadcount(int, int); // needed for readcount syscall
+int getcount(int, int); // needed for getcount syscall
 
 // ulib.c
 int stat(const char*, struct stat*);

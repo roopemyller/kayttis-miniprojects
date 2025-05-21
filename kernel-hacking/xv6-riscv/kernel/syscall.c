@@ -101,7 +101,7 @@ extern uint64 sys_unlink(void);
 extern uint64 sys_link(void);
 extern uint64 sys_mkdir(void);
 extern uint64 sys_close(void);
-extern uint64 sys_getreadcount(void); // needed for readcount syscall
+extern uint64 sys_getcount(void); // needed for getcount syscall
 
 
 // An array mapping syscall numbers from syscall.h
@@ -128,11 +128,11 @@ static uint64 (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
-[SYS_getreadcount] sys_getreadcount, // needed for readcount syscall
+[SYS_getcount] sys_getcount, // needed for getcount syscall
 };
 
 extern uint syscall_counts[];
-#define MAX_SYSCALL_NUMBERS 21
+#define MAX_SYSCALL_NUMBERS 22
 
 void
 syscall(void)
@@ -144,10 +144,10 @@ syscall(void)
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
 
     // Increment the syscall count for this syscall number
-    if (num < MAX_SYSCALL_NUMBERS) {
+    if (num <= MAX_SYSCALL_NUMBERS) {
       syscall_counts[num]++;
     }
-
+ 
     // Use num to lookup the system call function for num, call it,
     // and store its return value in p->trapframe->a0
     p->trapframe->a0 = syscalls[num]();
@@ -157,3 +157,4 @@ syscall(void)
     p->trapframe->a0 = -1;
   }
 }
+
