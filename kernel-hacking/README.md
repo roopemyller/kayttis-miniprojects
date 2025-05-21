@@ -36,9 +36,9 @@ Add the command to `Makefile`;
 
 ## Compiling and Running
 
-Information about using xv6-riscv [here](https://github.com/mit-pdos/xv6-riscv)
+Information about using xv6-riscv [here](https://github.com/mit-pdos/xv6-riscv) make sure that you have necessary packages etc. for xv6-riscv installed in your system.
 
-Run the following commands inside `/kernel-hacking/xv6-riscv`, the command `make qemu` command will boot the xv6 kernel
+Run the following commands inside `/kernel-hacking/xv6-riscv` to run the kernel, the command `make qemu` command will boot the xv6 kernel
 
 ```
 make clean
