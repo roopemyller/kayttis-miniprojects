@@ -19,3 +19,5 @@ GitHub Copilot (Claude 3.7 Sonnet and Gemini 2.5 Pro Preview) was used to create
 ### Project 2: Unix Utilities (@roopemyller and @dtuukkanen)
 
 ### Project 4: Kernel Hacking (@roopemyller)
+
+GitHub Copilot (Claude 3.5 Sonnet) was used to help me understand the xv6-riscv source code and give me ideas of how to do certain things in C language.
