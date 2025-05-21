@@ -14,7 +14,7 @@ The `sys_getcount()` system call implemented into the `kernel/sysfile.c` file. W
 
 ![alt text](image-1.png)
 
-The cli command `getcount` logic is in `user/getcount.c` (not all in the picture below). User has option between 5 different syscalls. With simple coding, more syscalls can be easily be added to this code, other files do not need changes.
+The cli command `getcount` logic is in `user/getcount.c` (not all in the picture below). User has option between 5 different syscalls. With simple coding, more syscalls can be easily added to this code, other files do not need changes.
 
 ![alt text](image-9.png)
 
@@ -26,7 +26,7 @@ Define the syscall command in `user/usys.pl` for the cli:
 
 ![alt text](image-3.png)
 
-Define the getcounf function in `user/user.h`:
+Define the `getcount` function in `user/user.h`:
 
 ![alt text](image-4.png)
 
@@ -45,7 +45,9 @@ make clean
 make
 make qemu
 ```
+
 Then run command `getcount`, the following usage information is printed:
+
 ```
 Usage: getcount [syscall] [reset]
 Syscall options to count:
@@ -65,12 +67,10 @@ Below you can see example use of the `getcount` command
 
 ## Points requested
 
-| Requirement | Points | Status |
-|---|---|---|
-| Everything submitted compiles and works at least on some level | 2 | Done |
-| The documentation is detailed, and the provided source code is reasonably well commented. | 1 | Done |
-| You can reset the counter with an argument | 1 | Done |
-| You can select between the number of different system call which to follow | 1 | Done, 5 different syscalls available
-| **Total** | **5** | 
-
-
+| Requirement                                                                               | Points | Status                               |
+| ----------------------------------------------------------------------------------------- | ------ | ------------------------------------ |
+| Everything submitted compiles and works at least on some level                            | 2      | Done                                 |
+| The documentation is detailed, and the provided source code is reasonably well commented. | 1      | Done                                 |
+| You can reset the counter with an argument                                                | 1      | Done                                 |
+| You can select between the number of different system call which to follow                | 1      | Done, 5 different syscalls available |
+| **Total**                                                                                 | **5**  |
