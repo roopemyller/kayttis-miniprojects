@@ -38,8 +38,8 @@ my-grep: searchterm [file ...]
 
 ### `my-grep`:
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](my-grep/img/image.png)
+![alt text](my-grep/img/image-1.png)
 
 ### `my-cat`:
 
