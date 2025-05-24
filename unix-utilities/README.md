@@ -4,8 +4,6 @@
 
 In this project, we built a few different simple versions of commonly used UNIX utiliy commands: cat, grep, zip and unzip.
 
-## Design choises
-
 ## Compiling and Running
 
 ### `my-cat`:
