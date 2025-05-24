@@ -13,7 +13,7 @@ In this project, we built a few different simple versions of commonly used UNIX 
 In the `my-cat` directory, run command to compile:
 
 ```
-gcc -o my-cat -Wall -Werror my-cat.c
+gcc my-cat.c -o my-cat -Wall -Werror
 ```
 
 Run program with
