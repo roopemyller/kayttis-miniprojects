@@ -3,7 +3,7 @@
 
 int main(const int argc, char *argv[]) {
     if (argc < 2) {
-        printf("my-unzip: file1 \n");
+        printf("my-unzip: file1 [file2 ...]\n");
         return 1;
     }
 
