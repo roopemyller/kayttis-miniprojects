@@ -17,7 +17,7 @@ gcc my-cat.c -o my-cat -Wall -Werror
 Run program with
 
 ```
-./mycat <file>
+./mycat test.txt
 ```
 
 ### `my-grep`:
