@@ -86,11 +86,11 @@ Result to output:
 
 ## Points requested
 
-| Requirement                                                                              | Points |
-| ---------------------------------------------------------------------------------------- | :----: |
-| Everything submitted compiles and works at least on some level.                          |   1    |
-| The documentation is appropriate, correct and the repository is available                |   0    |
-| The documentation is detailed, and the provided source code is reasonably well commented |   1    |
-| All additional assumptions                                                               |   1    |
-| Errors mentioned are addressed                                                           |   2    |
+| Requirement                                                                              | Points | Status |
+| ---------------------------------------------------------------------------------------- | :----: | ------ |
+| Everything submitted compiles and works at least on some level.                          |   1    | Done   |
+| The documentation is appropriate, correct and the repository is available                |   0    | Done   |
+| The documentation is detailed, and the provided source code is reasonably well commented |   1    | Done   |
+| All additional assumptions                                                               |   1    | Done   |
+| Errors mentioned are addressed                                                           |   2    | Done   |
 | **Total**                                                                                | **5**  |
