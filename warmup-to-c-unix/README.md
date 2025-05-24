@@ -26,16 +26,41 @@ For this project, we implemented a command-line utility called `reverse` that re
 
 ## Compiling and Running
 
-While in the warmup-to-c-unix folder:<br>
-`gcc reverse.c -o reverse`
+**While in the warmup-to-c-unix folder:**
 
-Run with:<br>
-`./reverse <input> <output>`<br>
+```
+gcc reverse.c -o reverse
+```
+
+**General usage:**
+
+```
+./reverse <input> <output>
+```
+
 where input and output are optional (expect input must be given if output is given)
+
+**Usage with stdin:**
+
+```
+./reverse
+```
+
+**Usage with input file**
+
+```
+./reverse input.txt
+```
+
+**Usage with input and output file**
+
+```
+./reverse input.txt output.txt
+```
 
 ## Examples
 
-Input file contents (named as `input` in examples):
+Input file contents (named as `input.txt` in examples):
 
 ```
 1
