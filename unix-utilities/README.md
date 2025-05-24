@@ -8,6 +8,20 @@ In this project, we built a few different simple versions of commonly used UNIX 
 
 ## Compiling and Running
 
+### `my-cat`:
+
+In the `my-cat` directory, run command to compile:
+
+```
+gcc -o my-cat -Wall -Werror my-cat.c
+```
+
+Run program with
+
+```
+./mycat <file>
+```
+
 ## Examples
 
 ## Points requested
