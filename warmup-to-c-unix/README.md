@@ -29,7 +29,7 @@ For this project, we implemented a command-line utility called `reverse` that re
 **While in the warmup-to-c-unix folder:**
 
 ```
-gcc reverse.c -o reverse
+gcc reverse.c -o reverse -Wall -Werror
 ```
 
 **General usage:**
@@ -72,11 +72,17 @@ Sauna
 Compile:
 ![Compile](img/compile-reverse.png)
 
+Run without parameters:
+![Run without parameters](img/reverse-no-parameters.png)
+
 Run with input parameter:
 ![Run with input parameter](img/reverse-input.png)
 
 Run with input and output parameter:
 ![Run with input and output parameter](img/reverse-output.png)
+
+Result to output:
+![Result to output](img/reverse-output-result.png)
 
 ## Points requested
 
