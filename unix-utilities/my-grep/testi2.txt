@@ -1,0 +1,40 @@
+Very shortly in English: This is the homepage of the Lappeenranta campus Finnish-speaking Anytime course "Operating Systems 
+and Systems Programming". The lectured English version of this course from Lahti campus will be available on Spring 2025 
+semester and can be found with Moodle search.
+
+Akateemisena vuonna 2024-2025 suomenkielinen käyttöjärjestelmien ja systeemiohjelmoinnin kurssi toteutetaan siten, että 
+kurssi on koko lukuvuoden saatavilla olevana Anytime-kurssina, jolla opiskelua tukevat kurssiassistentit sekä kurssin 
+luennoija viikoittaisten tutorointiryhmien sekä verkko-ohjauksen kautta. Lue kurssikirja, katso luentovideot ja palauta 
+viikkotehtäviä mikäli haluat pedata parempaa arvosanaa, toteuta kolme annetuista miniprojekteista sekä kurssin viimeisenä 
+suorituksenasi tee tentti.
+
+Kurssilla on viikkotehtävät sekä projektityöt, joiden palauttaminen vaikuttaa suoraan kurssin loppuarvosanaan; tarkemmat 
+ohjeet kurssikalvoissa. Luentomateriaalit, viikkotehtävät ja projektit ovat Anytime-toteutuksessa saatavilla kurssin alusta 
+lähtien. Viikkotehtävistä tai osaprojekteista ei julkaista oikeita vastauksia missään vaiheessa, oikeus korjauksiin ja niiden 
+aiheuttamiin muutoksiin materiaalissa sekä tehtävissä pidätetään.
+
+Kaikki kurssiin liittyvät käytännön asiat ilmoitetaan tämän Moodlesivun kautta; noudata aina Moodle-sivujen ilmoittamia 
+aikatauluja koska nauhoitteet saattavat olla aiemmalta luennoidulta kurssitoteutukselta tallennettuja.
+
+
+Kurssin kaikki materiaalit julkaistaan näillä Moodle-sivuilla, ja palautetaan näille Moodle-sivuille. Kaikki kurssin 
+materiaalit ovat kurssilla opiskelijoiden saatavilla kurssin alkamishetkestä alkaen, ja kaikkien suoritteiden viimeinen 
+palautusajankohta on 31.7.2025 klo 23:59.
+
+Koska kyseessä on Anytime-kurssi, luentovideoita, viikkotehtäviä sekä miniprojektien tehtävänantoja sekä kalvoja 
+päivitetään ja täydennetään kurssin ollessa käynnissä. Nämä päivitykset eivät koskaan vaikuta kurssi suoritustapaan tai 
+arvosteluasteikkoon. Isommista muutoksista mainitaan myös erikseen tehtävän tai projektin tehtävänannon errata-osiossa, 
+jos sellaiseen on tarvetta.
+
+Kurssin arvostelusta:
+Anytime-kurssit ovat ympäri vuoden saatavilla, ja opettaja antaa niistä loppuarvosanan sen jälkeen kun olet suorittanut 
+kurssin tentin. Arvosana annetaan yhden kalenterikuukauden sisällä palautuksesta seuraavin poikkeuksin:
+-Kesäperiodilla (kesä-heinäkuu) palautetut suoritukset arvostellaan elokuussa yliopiston yleisen lomakauden päätyttyä.
+-Vuodenvaihteessa (joulu-tammikuussa, 2. opetusperiodin päättymisen ja 3. alkamisen välinen jakso) palautetut työt 
+arvostellaan tammikuussa opetustauon päätyttyä.
+-Akateeminen lukuvuosi päättyy heinä-elokuun vaihteessa. Heinäkuun loppuun asetetuista palautuspäivämääristä ei täten 
+voida antaa vapautuksia millään syyllä. Jos et ole saanut kurssia valmiiksi heinäkuun loppuun mennessä, joudut 
+ilmoittautumaan seuraavan vuoden toteutukselle, odottamaan että se käynnistyy, ja palauttamaan kurssisuorituksesi sille, 
+uuden kurssin ohjeita ja tehtävänantoja noudattaen.
+
+Nämä linjaukset perustuvat yliopiston tutkintosääntöön, ja niistä voi kysyä tarkemmin esimerkiksi opintotoimistosta.

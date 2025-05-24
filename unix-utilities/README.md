@@ -4,12 +4,27 @@
 
 In this project, we built a few different simple versions of commonly used UNIX utiliy commands: cat, grep, zip and unzip.
 
-## Design choises
-
 ## Compiling and Running
+
+### `my-grep`:
+
+In the `my-grep` directory run command 
+
+```
+gcc -o my-grep -Wall -Werror my-grep.c
+```
+Usage:
+
+```
+my-grep: searchterm [file ...]
+```
 
 ## Examples
 
+### `my-grep`:
+
+![alt text](image.png)
+![alt text](image-1.png)
 ## Points requested
 
 | Requirement                                                                               | Points | Status |
