@@ -41,6 +41,11 @@ my-grep: searchterm [file ...]
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+### `my-cat`:
+
+![my cat compile](my-cat/img/compile-my-cat.png)
+![my cat run](my-cat/img/run-my-cat.png)
+
 ## Points requested
 
 | Requirement                                                                               | Points | Status |
