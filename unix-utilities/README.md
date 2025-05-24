@@ -6,6 +6,20 @@ In this project, we built a few different simple versions of commonly used UNIX 
 
 ## Compiling and Running
 
+### `my-cat`:
+
+In the `my-cat` directory, run command to compile:
+
+```
+gcc my-cat.c -o my-cat -Wall -Werror
+```
+
+Run program with
+
+```
+./mycat <file>
+```
+
 ### `my-grep`:
 
 In the `my-grep` directory run command 
@@ -25,6 +39,7 @@ my-grep: searchterm [file ...]
 
 ![alt text](image.png)
 ![alt text](image-1.png)
+
 ## Points requested
 
 | Requirement                                                                               | Points | Status |
