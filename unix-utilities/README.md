@@ -22,11 +22,12 @@ Run program with
 
 ### `my-grep`:
 
-In the `my-grep` directory run command 
+In the `my-grep` directory run command
 
 ```
 gcc -o my-grep -Wall -Werror my-grep.c
 ```
+
 Usage:
 
 ```
@@ -49,4 +50,4 @@ my-grep: searchterm [file ...]
 | my-cat works as instructed                                                                | 1      | Done   |
 | my-grep works as instructed                                                               | 1      | Done   |
 | my-zip and my-unzip works as instructed                                                   | 1      | Done   |
-| **Total**                                                                                 | **4**  |
+| **Total**                                                                                 | **5**  |
