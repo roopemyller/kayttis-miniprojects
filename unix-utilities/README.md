@@ -20,7 +20,25 @@ Run program with
 ./mycat <file>
 ```
 
+### `my-grep`:
+
+In the `my-grep` directory run command 
+
+```
+gcc -o my-grep -Wall -Werror my-grep.c
+```
+Usage:
+
+```
+my-grep: searchterm [file ...]
+```
+
 ## Examples
+
+### `my-grep`:
+
+![alt text](image.png)
+![alt text](image-1.png)
 
 ## Points requested
 
