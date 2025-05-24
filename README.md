@@ -22,4 +22,4 @@ GitHub Copilot (Claude 3.5 Sonnet, Claude 3.7 Sonnet and Claude 4 Sonnet) was us
 
 ### Project 4: Kernel Hacking (@roopemyller)
 
-GitHub Copilot (Claude 3.5 Sonnet) was used to help me understand the xv6-riscv source code and give me ideas of how to do certain things in C language.
+GitHub Copilot (Claude 3.5 Sonnet) was used to help me install the xv6-riscv kernel and understand the xv6-riscv source code and give me ideas of how to do certain things in C language.
