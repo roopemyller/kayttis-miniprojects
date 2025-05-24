@@ -46,7 +46,7 @@ my-grep: searchterm [file ...]
 | Requirement                                                                               | Points | Status |
 | ----------------------------------------------------------------------------------------- | ------ | ------ |
 | Everything submitted compiles and works at least on some level.                           | 1      | Done   |
-| The documentation is detailed, and the provided source code is reasonably well commented. | 1      | -      |
+| The documentation is detailed, and the provided source code is reasonably well commented. | 1      | Done   |
 | my-cat works as instructed                                                                | 1      | Done   |
 | my-grep works as instructed                                                               | 1      | Done   |
 | my-zip and my-unzip works as instructed                                                   | 1      | Done   |
