@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 
     // if file is not specified, read from stdin
     if (argc == 2) {
-        while (line = getline(&buffer, &buffer_size, stdin) != -1) {
+        while ((line = getline(&buffer, &buffer_size, stdin)) != -1) {
             if (strstr(buffer, searchterm) != NULL) {
                 printf("%s", buffer);
             }
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
             exit(1);
         }
         // read and print file contents line by line
-        while (line = getline(&buffer, &buffer_size, fp) != -1){
+        while ((line = getline(&buffer, &buffer_size, fp)) != -1){
             if (strstr(buffer, searchterm) != NULL) {
                 printf("%s", buffer);
             }
