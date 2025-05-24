@@ -93,3 +93,4 @@ Result to output:
 | The documentation is detailed, and the provided source code is reasonably well commented |   1    |
 | All additional assumptions                                                               |   1    |
 | Errors mentioned are addressed                                                           |   2    |
+| **Total**                                                                                | **5**  |
