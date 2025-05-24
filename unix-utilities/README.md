@@ -36,11 +36,12 @@ my-grep: searchterm [file ...]
 
 ### `my-zip`:
 
-In the `my-zip` directory run command 
+In the `my-zip` directory run command
 
 ```
 gcc -o my-zip -Wall -Werror my-zip.c
 ```
+
 Usage:
 
 ```
@@ -49,11 +50,12 @@ my-zip: file1 [file2 ...]
 
 ### `my-unzip`:
 
-In the `my-unzip` directory run command 
+In the `my-unzip` directory run command
 
 ```
 gcc -o my-unzip -Wall -Werror my-unzip.c
 ```
+
 Usage:
 
 ```
@@ -76,9 +78,10 @@ my-unzip: file1 [file2 ...]
 
 In the picture below, is the my-zip. In our opinion the instructions for it were a bit confusing as to how the each stdout should be show but this is what we came up with. The `%`in the end of the output comes from unix end of line so it should not be considered. The command `./my-zip testi.txt | hexdump -C` shows the true hex form of the output of the `my-zip`. In the hexdump the part that really matters is the `0a 00 00 00 61 04 00 00 00 62` which translates to 10a4b (`0a 00 00 00` = 10, `61` = a, `04 00 00 00` = 4 and `62` = b). Everything else in the output are just hexdump command 'extras'. To see raw hex form user can try command `./my-zip testi.txt | xxd -p`
 
-![alt text](image-3.png)
+![alt text](my-zip/img/image-3.png)
 
-![alt text](image-4.png)
+![alt text](my-zip/img/image-4.png)
+
 ## Points requested
 
 | Requirement                                                                               | Points | Status |
